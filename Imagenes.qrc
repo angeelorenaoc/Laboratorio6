@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/espacio">
+        <file>espacio.jpg</file>
+        <file>espaciof.jpg</file>
+    </qresource>
+</RCC>
