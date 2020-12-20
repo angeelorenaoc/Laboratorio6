@@ -37,10 +37,10 @@ void cuerpo::acelerar(float px2_, float py2_, float masa2)
 
 void cuerpo::actualizar(float dt)
 {
+    PX = PX + (VX*dt) + ((AX*dt*dt)/2);
+    PY = PY + (VY*dt) + ((AX*dt*dt)/2);
     VX = VX + (AX*dt);
     VY = VY + (AY*dt);
-    PX = PX + (VX*dt);
-    PY = PY + (VY*dt);
 }
 
 

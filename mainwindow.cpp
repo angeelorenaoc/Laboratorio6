@@ -15,7 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
     scene = new QGraphicsScene(this);
     scene->setSceneRect(-alto/2,-ancho/2,alto,ancho);
    // scene->setBackgroundBrush(QBrush(QImage(":/new/espacio/espaciof.jpg")));
-    scene->setBackgroundBrush(QPixmap(":/new/espacio/espaciof.jpg").scaledToWidth(ui->graphicsView->width()));
+   // scene->setBackgroundBrush(QPixmap(":/new/espacio/espaciof.jpg").scaledToWidth(ui->graphicsView->width()));
+    setStyleSheet("MainWindow {background-image:url(:/new/espacio/espacio.jpg)}");
 
     ui->graphicsView->setScene(scene);
     ui->centralwidget->adjustSize();
